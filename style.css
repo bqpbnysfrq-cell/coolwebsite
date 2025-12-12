@@ -1,54 +1,154 @@
+body {
+  background-color: #f9f2e4;
+}
+
+.container--float {
+  float: left;
+  padding: 40px;
+  width: 45%;
+  background-color: #ffffff;
+  height: 300px;
+}
+
+.container.disable-flex {
+  display: block;
+}
+.container > div {
+  position: relative;
+  left: 180px;
+  margin: 10px;
+  padding: 20px;
+  font-size: 22px;
+}
+
+/* Grid of boxes */
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 450px);
+  column-gap: 400px;
+  row-gap: 120px;
+  justify-content: left;
+  align-items: start;
+  margin: 80px 60px;
+}
+
+.header-link {
+  display: flex;
+  gap: 40px;
+  padding-left: 1050px;
+  padding-top: 40px;
+}
+/* .header-link animation */
 div {
-    a {
-        text-decoration: none;
-        color: black;
-      }
-      
-    font-family: Arial, Helvetica, sans-serif;
-    .hover-underline {
-        font-size: 1,8rem;
-        color: #000000;
-        position: relative;
-        display: inline-block;
-      }
-      
-   
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
-      .hover-underline::after,
-      .hover-underline::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(to right, #555555, #686868);
-        bottom: -5px;
-        left: 0;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 0.4s ease-out;
-      }
-      
-      .hover-underline:hover::after,
-      .hover-underline:hover::before {
-        transform: scaleX(1);
-      }
-}
-
-
-p1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, italic;
-    font-size: 64px;
+  font-family: Geo;
+  .hover-underline {
+    font-size: 29px;
+    color: #000000;
     position: relative;
-    left: 80px;
-    top: 20px;
     display: inline-block;
+  }
+
+  .hover-underline::after,
+  .hover-underline::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #555555, #686868);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+  }
+
+  .hover-underline:hover::after,
+  .hover-underline:hover::before {
+    transform: scaleX(1);
+  }
 }
-p2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 27px;
-    margin-top: 30px;
-    margin-left: 120px;
-    display:block;
+
+.header-svg {
+  position: relative;
+  padding-left: 120px;
+  padding-top: 40px;
+}
+
+.header-descriptor {
+  position: relative;
+  font-family: Kodchasan;
+  font-size: 30px;
+  margin-left: 160px;
+  bottom: 15px;
+}
+
+.computer-svg {
+  position: absolute;
+  padding-left: 825px;
+  top: 140px;
+}
+
+.twirl-svg {
+  position: absolute;
+  padding-left: 60px;
+  padding-top: 60px;
+}
+
+.twirl2-svg {
+  position: absolute;
+  padding-left: 180px;
+  padding-top: 710px;
+}
+
+.star1-svg {
+  position: absolute;
+  padding-left: 1195px;
+  padding-top: 325px;
+}
+
+.star2-svg {
+  position: absolute;
+  padding-left: 1130px;
+  padding-top: 20px;
+}
+
+.project {
+  font-family: "Geo";
+  font-size: 30px;
+  padding-top: 60px;
+  padding-left: 130px;
+}
+
+.project-grid {
+  padding-top: 40px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-grid-boxes {
+  outline: solid #000000 1px;
+  outline-offset: 2px;
+  width: 500px;
+  height: 350px;
+  background-color: #ffffff00;
+  border-radius: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-description {
+  font-family: "Kodchasan";
+  font-weight: 600;
+  position: relative;
+  bottom: 45px;
+  padding-left: 50px;
 }
 
 /* Hover-to-video card styles */
@@ -57,15 +157,18 @@ p2 {
   height: 250px;
   overflow: hidden;
   border-radius: 6px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
   margin: 20px 210px; /* position similar to other elements, adjust as needed */
 }
 .hover-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  width: 500px;
+  height: auto;
+  object-fit: fill;
+  display: flex;
   cursor: pointer;
+  border-radius: 60px;
+  overflow: hidden;
+  padding-bottom: 60px;
 }
 
 .video-description {
@@ -75,6 +178,22 @@ p2 {
 
 /* Small responsive tweak */
 @media (max-width: 700px) {
-  .hover-video-card { width: 100%; height: 200px; margin-left: 0; }
+  .hover-video-card {
+    width: 100%;
+    height: 200px;
+    margin-left: 0;
+  }
 }
 
+.svg-footer {
+  position: flex;
+  padding-top: 70px;
+  overflow: hidden;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}

@@ -1,85 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aquila Pachner</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .container--float {
-            float: left;
-            padding: 40px;
-            width: 45%;
-            background-color: #ffffff;
-            height: 300px;
-        }
-        .container {
-            display: flex;
-        }
-        .container.disable-flex {
-            display: block;
-        }
-        .container > div {
-            position: relative;
-            left: 180px;
-            margin: 10px;
-            padding: 20px;
-            font-size: 22px;
-        }
-
-        /* Grid of boxes */
-        .container-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 450px);
-            column-gap: 400px;
-            row-gap: 120px;
-            justify-content: left;
-            align-items: start;
-            margin: 80px 60px;
-        }
-        .container-grid > div {
-            margin: 0;
-            padding: 0;
-            display: block;
-        }
-        .square {
-            width: 450px;
-            height: 250px;
-            background-color: transparent;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .square .hover-video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .square2 {
-            position: fixed;
-            right: 40px;
-            top: 50%;
-            width: 140px;
-            height: 140px;
-            padding-left: 60px;
-            background-color: rgb(0, 0, 0);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div><div class="hover-underline"><a href="#">work</a></div></div>
-        <div><div class="hover-underline"><a href="#">about</a></div></div>
-        <div><div class="hover-underline"><a href="#">contact</a></div></div>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="header-link">
+      <div>
+        <div class="hover-underline"><a href="#">work</a></div>
+      </div>
+      <div>
+        <div class="hover-underline"><a href="#">about</a></div>
+      </div>
+      <div>
+        <div class="hover-underline"><a href="#">contact</a></div>
+      </div>
     </div>
-    <p1>Aquila Pachner</p1>
-        <p2>Illustration and motion design is my passion.</p2>
+    <div class="header-svg">
+      <img src="assets/AquilaPachnerHeader.svg" height="100" width="400" />
+    </div>
+
+    <div class="computer-svg">
+      <img src="assets/Computer.svg" width="310" height="auto" />
+    </div>
+
+    <div class="header-descriptor">
+      <span
+        >Hi! I make graphics, especially moving ones. <br />
+        Currently I’m a freelance designer making <br />
+        animations and graphic design.</span
+      >
+    </div>
+
+    <div class="twirl-svg">
+      <img src="assets/Twirl.svg" height="80" width="auto" />
+    </div>
+
+    <div class="project"><span>Projects</span></div>
+
+    <hr />
+
+    <div class="twirl2-svg">
+      <img src="assets/Twirl2.svg" height="110" width="auto" />
+    </div>
+
+    <div class="star1-svg">
+      <img src="assets/Star 1.svg" height="90" width="auto" />
+    </div>
+
+    <div class="project-grid">
+      <div class="project-grid-boxes">
+        <video
+          class="hover-video"
+          poster="assets/orandapreview.jpg"
+          preload="metadata"
+          muted
+          playsinline
+        >
+          <source src="assets/hover.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="project-description"><span> Corporate Identity </span></div>
+      </div>
+
+      <div class="project-grid-boxes">
+        <video
+          class="hover-video"
+          poster="assets/preview.jpeg"
+          preload="metadata"
+          muted
+          playsinline
+        >
+          <source src="assets/hover.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="project-description">
+          <span> Webdesign und Leitsysteme </span>
+        </div>
+      </div>
+      <div class="project-grid-boxes">
+        <video
+          class="hover-video"
+          poster="assets/preview.jpeg"
+          preload="metadata"
+          muted
+          playsinline
+        >
+          <source src="assets/hover.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="project-description"><span> Magazin </span></div>
+      </div>
+      <div class="project-grid-boxes">
+        <video
+          class="hover-video"
+          poster="assets/preview.jpeg"
+          preload="metadata"
+          muted
+          playsinline
+        >
+          <source src="assets/hover.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="project-description"><span> Animation </span></div>
+      </div>
+      <div class="project-grid-boxes">
+        <video
+          class="hover-video"
+          poster="assets/preview.jpeg"
+          preload="metadata"
+          muted
+          playsinline
+        >
+          <source src="assets/hover.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="project-description"><span> Freecards </span></div>
+      </div>
+      <div class="project-grid-boxes">
+        <video
+          class="hover-video"
+          poster="assets/preview.jpeg"
+          preload="metadata"
+          muted
+          playsinline
+        >
+          <source src="assets/hover.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="project-description"><span> Animation </span></div>
+      </div>
+    </div>
+
+    <div class="star2-svg">
+      <img src="assets/Star 2.svg" height="90" width="auto" />
+    </div>
+
+    <div class="svg-footer">
+      <img src="assets/Rectangle 12.svg" height="100%" width="110%" />
+    </div>
+
+    <div class="footer"><span> 2025 Aquila Pachner </span></div>
 
     <!-- Grid: each .square contains a hover-preview video -->
-    <div class="container-grid">
+    <!-- <div class="container-grid">
         <div class="square">
             <video class="hover-video" poster="assets/preview.jpeg" preload="metadata" muted playsinline>
                 <source src="assets/hover.mp4" type="video/mp4">
@@ -117,8 +195,8 @@
                 Your browser does not support the video tag.
             </video>
         </div>
-    </div>
+    </div> -->
 
     <script src="assets/hover-video.js"></script>
-</body>
+  </body>
 </html>
