@@ -1,0 +1,115 @@
+body {
+  background-color: #f9f2e4;
+}.header-link {
+  display: flex;
+  gap: 40px;
+  padding-left: 1050px;
+  padding-top: 40px;
+}
+/* .header-link animation */
+div {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  font-family: Geo;
+  .hover-underline {
+    font-size: 29px;
+    color: #000000;
+    position: relative;
+    display: inline-block;
+  }
+
+  .hover-underline::after,
+  .hover-underline::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #555555, #686868);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+  }
+
+  .hover-underline:hover::after,
+  .hover-underline:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+.header-svg {
+  position: relative;
+  bottom: 50px;
+}
+.header-title {
+  position: justify;
+  font-family: Geo;
+  font-size: 60px;
+  margin-left: 320px;
+  bottom: 15px;
+}
+
+.header-descriptor {
+  position: justify;
+  font-family: Kodchasan;
+  font-size: 32px;
+  margin-left: 360px;
+  bottom: 15px;
+}
+
+.twirl-svg {
+  position: absolute;
+  padding-left: 260px;
+  top: 210px;
+}
+
+.oranda-sheet1 {
+    position: absolute;
+    left: 100px;
+    padding-top: 80px;
+}
+
+.stylesheet-title {
+    position: relative;
+    font-family: Geo;
+    font-size: 54px;
+    left: 620px;
+    padding-top: 100px;
+}
+
+.stylesheet-descriptor {
+    position: relative;
+    font-family: Kodchasan;
+    font-size: 28px;
+    left: 660px;
+    padding-top: 10px;
+}
+
+.oranda-sheet2 {
+    position: relative;
+    left: 740px;
+    padding-top: 60px;
+}
+
+.oranda-sheet3 {
+    position: relative;
+    padding-top: 50px;
+    right: 20px;
+}
+
+.svg-footer {
+  position: flex;
+  padding-top: 70px;
+  overflow: hidden;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
