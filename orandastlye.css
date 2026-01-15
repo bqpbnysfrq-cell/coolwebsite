@@ -41,14 +41,18 @@ div {
   }
 }
 
+.headerbox {
+    display:flex;
+}
+
 .header-svg {
   position: relative;
   bottom: 50px;
 }
 .header-title {
   position: justify;
-  font-family: Geo;
-  font-size: 60px;
+  font-family: Kode Mono;
+  font-size: 50px;
   margin-left: 320px;
   bottom: 15px;
 }
@@ -56,7 +60,7 @@ div {
 .header-descriptor {
   position: justify;
   font-family: Kodchasan;
-  font-size: 32px;
+  font-size: 24px;
   margin-left: 360px;
   bottom: 15px;
 }
@@ -67,6 +71,25 @@ div {
   top: 210px;
 }
 
+.twirl2-svg {
+  position: absolute;
+  left: 1050px;
+  padding-top: 435px;
+}
+
+.star1-svg {
+  position: absolute;
+    padding-left: 357px;
+    padding-top: 881px;
+    transform: rotate(36deg);
+}
+
+.star2-svg {
+  position: absolute;
+  padding-left: 1130px;
+  padding-top: 30px;
+}
+
 .oranda-sheet1 {
     position: absolute;
     left: 100px;
@@ -75,8 +98,8 @@ div {
 
 .stylesheet-title {
     position: relative;
-    font-family: Geo;
-    font-size: 54px;
+    font-family: Kode Mono;
+    font-size: 44px;
     left: 620px;
     padding-top: 100px;
 }
@@ -84,21 +107,26 @@ div {
 .stylesheet-descriptor {
     position: relative;
     font-family: Kodchasan;
-    font-size: 28px;
+    font-size: 24px;
     left: 660px;
     padding-top: 10px;
 }
+.orandasheetbox2 {
+  display: inline;
 
+}
 .oranda-sheet2 {
     position: relative;
     left: 740px;
     padding-top: 60px;
+    overflow: hidden;
 }
 
 .oranda-sheet3 {
     position: relative;
     padding-top: 50px;
     right: 20px;
+    z-index: -1;
 }
 
 .svg-footer {

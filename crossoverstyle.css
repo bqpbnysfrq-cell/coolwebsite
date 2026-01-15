@@ -41,10 +41,135 @@ div {
   }
 }
 
+.twirl-svg {
+  position: absolute;
+    padding-left: 913px;
+    top: 207px;
+}
+
+.twirl2-svg {
+  position: absolute;
+    padding-left: 290px;
+    padding-top: 74px;
+}
+
+.star1-svg {
+  position: absolute;
+  padding-left: 824px;
+    padding-top: 597px;
+}
+
+.headerbox {
+    display:flex;
+}
+
 .header-svg {
   position: relative;
   bottom: 50px;
+  overflow: clip;
 }
 .loopingvideo {
     position: relative;
+}
+
+.titletext {
+text-align: end;
+font-family: Kode Mono;
+font-size: 40px;
+padding-right: 180px;
+padding-bottom: 40px;
+}
+
+.descriptortext {
+text-align: end;
+font-family: Kodchasan;
+font-size: 25px;
+padding-right: 185px;
+}
+
+.phonevideo {
+    position: relative;
+    right: 110px;
+    clip-path: circle(50% at center);
+    bottom: 450px;
+    overflow: hidden
+}
+
+.laptopbox {
+  display: flex;
+    position: relative;
+    align-items: center;
+    bottom: 440px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow: hidden;
+
+}
+ 
+.laptopvideo {
+  position: relative;
+  
+}
+
+.screenshot1 {
+     position: relative;
+    left: 60px;
+}
+
+.screenshot2 {
+     position: relative;
+    right: 60px;
+}
+
+.leitsystembox {
+  position: relative;
+  padding-bottom: 40px;
+}
+.leitsystem1 {
+  position: absolute;
+    display: flex;
+    left: 670px;
+    top: 1300px;
+}
+
+.leitsystem2 {
+    position: absolute;
+    display: flex;
+    left: 150px;
+    top: 1400px;
+    z-index: -1;
+}
+
+.leitsystemtext {
+  position:relative;
+      left: 800px;
+    top: 90px;
+  font-family: Kodchasan;
+  font-size: 22px;
+  width: 40%;
+  
+}
+
+.footerbox {
+  position: relative;
+  top: 240px;
+}
+.star2-svg {
+  position: absolute;
+  padding-left: 1130px;
+  padding-top: 30px;
+}
+
+.svg-footer {
+  position: flex;
+  padding-top: 70px;
+  overflow: hidden;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
